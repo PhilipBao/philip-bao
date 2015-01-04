@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<title>Welcome to Philip's Blog!</title>
+
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+  
+  <style>
+
+    #header {
+    
+      color: black;
+      text-align:center;
+      padding:8px;
+    }
+
+  
+    #section1 {
+
+      float:left;
+      text-align:center;
+      padding:10px;
+      font-size:20px;
+    }
+
+
+    #foot {
+
+ 
+      text-align:center;
+      padding:30px;
+      clear:both;
+      font-family:Arial;
+      line-height:30px;
+      font-size:30px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id = "header">
+
+    <h1 style="font-family:verdana">Philip's Blog</h1>
+
+  </div>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">  </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">My Blog</a></li>
+          <li><a href="https://github.com/bwwyyy" target="_blank">My Github</a></li>
+          <li><a href="https://drive.google.com/file/d/0BzkUR59ZAIPxZDMzM2pFc200VlE/view?usp=sharing" target="_blank">My Resume</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My program<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+             <li><a href="https://github.com/bwwyyy/Tower-of-the-Sorcerer-V2.0">Python</a></li>
+             <li class="divider"></li>
+             <li><a href="https://github.com/bwwyyy/Linked_list">C++</a></li>
+             <li class="divider"></li>
+             <li><a href="#">C</a></li>
+            </ul>
+         </li>
+       </ul>
+        <form class="navbar-form navbar-left" action="http://www.google.com/search">
+          <div class="form-group">
+            <input name="q"  class="form-control" placeholder="Search in google" >
+          </div>
+          <input type="submit">
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/help">Help</a></li>
+
+        </ul>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+
+  <div class="jumbotron">
+    <div class="container">
+      <div id="section1">
+        My name is Weiyuan (Philip) Bao, this is my blog in google app engine. I am a Computer Engineering student in Mcmaster University.<br>
+
+        <a>
+          <img src="http://idiap.github.io/bob/img/github.png" alt="GitHub" style="width:60px;height:60px;border:0">
+        </a>
+    
+      </div>
+    </div>
+    <hr>
+
+    <div class="jumbotron">
+      <div class="container">
+        <form>
+         <div class="form-group">
+           <textarea class="form-control status-box" rows="2" placeholder="What's you want to say?"></textarea>
+         </div>
+       </form>
+        <div class="button-group pull-right">
+         <p class="counter">140</p>
+          <a href="#" class="btn btn-primary">Post</a>
+        </div>
+    
+       <ul class="posts">
+       </ul>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <div class="jumbotron" id = "foot">
+      <div class="page-header">
+         <h1>Previous Comments:</h1>
+      </div>
+     <ul class="posts">
+     </ul>
+    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://www.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://www.getbootstrap.com/assets/js/docs.min.js"></script>
+    <script src="js/main.js"></script>
+
+ </body>
+
+</html>
