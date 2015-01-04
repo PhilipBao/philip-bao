@@ -1,0 +1,27 @@
+    header {
+    
+      color: black;
+      text-align:center;
+      padding:8px;
+    }
+
+  
+    section1 {
+
+      float:left;
+      text-align:center;
+      padding:10px;
+      font-size:20px;
+    }
+
+
+    foot {
+
+ 
+      text-align:center;
+      padding:30px;
+      clear:both;
+      font-family:Arial;
+      line-height:30px;
+      font-size:30px;
+    }
