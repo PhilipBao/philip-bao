@@ -1,4 +1,4 @@
-    header {
+    #header {
     
       color: black;
       text-align:center;
@@ -6,7 +6,7 @@
     }
 
   
-    section1 {
+    #section1 {
 
       float:left;
       text-align:center;
@@ -15,7 +15,7 @@
     }
 
 
-    foot {
+    #foot {
 
  
       text-align:center;
