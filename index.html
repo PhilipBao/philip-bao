@@ -13,68 +13,34 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   
   <link type="text/css" rel="stylesheet" href="statics/css/style.css">
-
-
-
-  <!--
-  <style>
-
-    #header {
-    
-      color: black;
-      text-align:center;
-      padding:8px;
-    }
-
-  
-    #section1 {
-
-      float:left;
-      text-align:center;
-      padding:10px;
-      font-size:20px;
-    }
-
-
-    #foot {
-
- 
-      text-align:center;
-      padding:30px;
-      clear:both;
-      font-family:Arial;
-      line-height:30px;
-      font-size:30px;
-    }
-  </style>-->
 </head>
 
 <body>
 
+  <div class="menu">
+    
+      <!-- Menu icon -->
+      <div class="icon-close">
+        <i class="fa fa-times fa-2x"></i>
+      </div>
 
+     <!-- Menu -->
+     <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PROFILE</a></li>
+        <li><a href="#">TECHINICAL QULIFICATION</a></li>
+        <li><a href="#">HOBBY</a></li>
+        <li><a href="#">CONTACT</a></li>
+     </ul>
+  </div>
   <div id = "header">
-      <div class="icon-menu">
-        <i class="fa fa-bars"></i>
-        Menu
-      </div>
-      <div class="menu">
-      
-        <!-- Menu icon -->
-        <div class="icon-close">
-          <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
-        </div>
 
-       <!-- Menu -->
-       <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Contact</a></li>
-       </ul>
-      </div>
+    <h1 class="ti">Philip's Blog</h1>
 
-    <h1 style="font-family:verdana">Philip's Blog</h1>
-
+  </div>
+  <div class="icon-menu">
+    <i class="fa fa-bars"></i>
+    Menu
   </div>
 
 
@@ -94,8 +60,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="http://bwwyyy.github.io/philip-bao/">My Blog</a></li>
-          <li><a href="https://github.com/bwwyyy" target="_blank">My Github</a></li>
+          
+          <li><a href="file:///D:/web/philip-bao/index.html">My Blog</a></li>
           <li><a href="https://drive.google.com/file/d/0BzkUR59ZAIPxZDMzM2pFc200VlE/view?usp=sharing" target="_blank">My Resume</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">My program<span class="caret"></span></a>
@@ -108,25 +74,24 @@
             </ul>
          </li>
        </ul>
-        <form class="navbar-form navbar-left" action="http://www.google.com/search">
+        <form class="navbar-form navbar-right" action="http://www.google.com/search">
           <div class="form-group">
             <input name="q"  class="form-control" placeholder="Search in google" >
           </div>
           <input type="submit">
         </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/help">Help</a></li>
-
-        </ul>
-     </div><!-- /.navbar-collapse -->
-   </div><!-- /.container-fluid -->
+        
+     </div>
+   </div>
   </nav>
 
 
 
 
   <div class="jumbotron">
-    <div class="container">
+    <div class="profile">
+      <h2>Profile</h2>
+      <hr>
       <div id="section1">
         My name is Weiyuan (Philip) Bao, this is my blog in google app engine. I am a Computer Engineering student in Mcmaster University. <br>
 
@@ -135,39 +100,63 @@
         </a>
     
       </div>
-    </div>
-    <hr>
-
-    <div class="jumbotron">
-      <div class="container">
-        <form>
-         <div class="form-group">
-           <textarea class="form-control status-box" rows="2" placeholder="What's you want to say?"></textarea>
-         </div>
-       </form>
-        <div class="button-group pull-right">
-         <p class="counter">140</p>
-          <a href="#" class="btn btn-primary">Post</a>
-        </div>
-    
+      <form>
+       <div class="form-group">
+         <textarea class="form-control status-box" rows="2" placeholder="What's you want to say?"></textarea>
+       </div>
+     </form>
+      <div class="button-group pull-right">
+       <p class="counter">140</p>
+        <a href="#" class="btn btn-primary">Post</a>
       </div>
+      <p>You Said:</p>
+      <ul class="posts">
+      </ul>
+
+  
+    </div>
+      
+  </div>
+
+
+  <div class="jumbotron">
+    <div class="tech">
+      <h2>Techinical Qualification</h2>
+      <h3></h3>
+      <hr>
     </div>
   </div>
-    <hr>
-    <div class="jumbotron" id = "foot">
-      <div class="page-header">
-         <h1>Previous Comments:</h1>
-      </div>
-     <ul class="posts">
-     </ul>
-    
+
+  <div class="jumbotron">
+    <div class="hobb">
+      <h2>Interest</h2>
+      <h3></h3>
+      <hr>
     </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="cont">
+      <h2>Contact</h2>
+      <h3></h3>
+      <hr>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="totop"><a class="fa fa-sort-asc fa-2x">TOTOP</a></div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://www.getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <script src="http://www.getbootstrap.com/assets/js/docs.min.js"></script>
     <script src="statics/js/main.js"></script>
 
- </body>
+</body>
 
 </html>
