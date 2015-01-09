@@ -33,11 +33,7 @@
         <li><a href="#">CONTACT</a></li>
      </ul>
   </div>
-  <div id = "header">
 
-    <h1 class="ti">Philip's Blog</h1>
-
-  </div>
   <div class="icon-menu">
     <i class="fa fa-bars"></i>
     Menu
@@ -45,7 +41,7 @@
 
 
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+    <div class="container-fluid" style="z-index: 4;">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -80,38 +76,79 @@
           </div>
           <input type="submit">
         </form>
-        
      </div>
    </div>
   </nav>
 
 
+  <div  id = "top" class="jumbotron" style="height: 980px;">
+    <div class = "container" style = "text-align: center; margin-bottom: -40px;">
+      <h1>Philip (Weiyuan) Bao</h1>
+      <sub>Personal Blog</sub>
+    </div>
+    <div class="layer"></div>
+  </div>
+
 
 
   <div class="jumbotron">
     <div class="profile">
-      <h2>Profile</h2>
-      <hr>
-      <div id="section1">
-        My name is Weiyuan (Philip) Bao, this is my blog in google app engine. I am a Computer Engineering student in Mcmaster University. <br>
-
-        <a>
-          <img src="http://idiap.github.io/bob/img/github.png" alt="GitHub" style="width:60px;height:60px;border:0">
-        </a>
-    
+      <div style="margin-bottom:10px;" > 
+        <h2>Profile</h2>
       </div>
+      <div style="width:800px;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+
+      <p style="text-align:center; float: left auto;margin-top:40px;"><b>Some information about me:</b></p>
+
+      
+
+        <div class="col-md-4" style="text-align:center;float:center;margin:0px auto;">
+          <p>
+            <strong>Name:</strong><br>
+            Philip (Weiyuan) Bao<br>
+            <strong>Age:</strong><br>
+            19<br>
+            <strong>Location:</strong><br>
+            Hamilton, Ontario, Canada<br>
+          </p>
+        </div>
+        <div style="margin:0pxauto;">
+          <div class="boxF" >
+              <div class="boxS">
+                  <div class="boxT" style="background-image: url(statics/img/photo.jpg);">
+                      <div class="overlay">
+                          <a href="#">+</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      
+      <br>
+
+
+      
+      <div id="section1" style="margin-bottom: 20px;margin-top: -10px;">
+        
+        <sub> I am a second year Computer Engineering student from McMaster University. I am curious and love learning about new knowledge of computer. I am a fast learner and can learn and apply new knowledge quickly. I plan to find a place to practise my skills in the coming summer so that I can learn more from practical tasks.
+        </sub>
+
+      </div>
+      <br>
+      
       <form>
        <div class="form-group">
-         <textarea class="form-control status-box" rows="2" placeholder="What's you want to say?"></textarea>
+         <textarea class="form-control status-box" rows="2" placeholder="What's you want to comment?"></textarea>
        </div>
      </form>
-      <div class="button-group pull-right">
+      <div class="button-group pull-right" style="margin-bottom: 60px;">
        <p class="counter">140</p>
         <a href="#" class="btn btn-primary">Post</a>
       </div>
       <p>You Said:</p>
       <ul class="posts">
       </ul>
+      <div style="width:800px;height:60px;"></div>
 
   
     </div>
@@ -139,6 +176,7 @@
     <div class="cont">
       <h2>Contact</h2>
       <h3></h3>
+
       <hr>
     </div>
   </div>

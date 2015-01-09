@@ -1,3 +1,23 @@
+.layer {
+   background-color: black;
+   height: inherit;
+   position: absolute;
+   top: 72px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 0.3;
+}
+
+
+#pho{
+  width:30%;
+  height:auto;
+  border:0;
+  -ms-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+}
 body {
   left: 0;
   margin: 0;
@@ -5,12 +25,48 @@ body {
   position: relative;
 }
 
+.jumbotron .container h1 {
+  font-size: 60px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+
+}
+
+
 h2 {
    font-size: 52px;
    text-align: center;
    padding-top:20px;
    padding-bottom:20px;
 }
+
+.jumbotron sub{
+  font-size: 25px;
+  text-align: center;
+}
+
+.jumbotron {
+   background-attachment: fixed;
+   background-image: url("../statics/img/bg.jpg");
+   -moz-background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100%;
+   margin-bottom: 0;
+   /*z-index: 999;*/
+   padding: 0 !important;
+}
+
+.jumbotron .container {
+   position: relative;
+   top: 28%;
+   z-index: 4;
+   text-align: center;
+   color: #FFFFFF;
+}
+
 
 
 #header {
@@ -121,3 +177,49 @@ h2 {
   color: #fff;
 }
 
+
+.boxF, .boxS, .boxT, .overlay
+{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    margin:0 auto;
+
+}
+.boxF, .boxS
+{
+    visibility: hidden;
+    
+}
+.boxF
+{
+    transform: rotate(120deg);
+
+    -ms-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    /*float: center;*/
+}
+.boxS
+{
+    transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+}
+.boxT
+{
+    transform: rotate(-60deg);
+    background: no-repeat 50% center;
+    background-size: 90% auto;
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    visibility: visible;
+}
+.overlay
+{
+    transition: all 250ms ease-in-out 0s;
+    display: none;
+
+}
