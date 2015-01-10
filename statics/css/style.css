@@ -1,3 +1,16 @@
+hr {
+  margin: 40px 0;
+  border-color: #727878;
+  opacity: 0.5;
+  width:500px;
+  size:20px;
+  margin:0px auto;
+  padding-bottom:40px;
+
+}
+
+
+
 .layer {
    background-color: black;
    height: inherit;
@@ -23,6 +36,7 @@ body {
   margin: 0;
   /*overflow: ;*/
   position: relative;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .jumbotron .container h1 {
@@ -39,6 +53,7 @@ h2 {
    text-align: center;
    padding-top:20px;
    padding-bottom:20px;
+
 }
 
 .jumbotron sub{
@@ -65,7 +80,9 @@ h2 {
    text-align: center;
 }
 
-
+/*.container{
+  list-style-type: none;
+}*/
 
 #header {
 
@@ -73,6 +90,22 @@ h2 {
   text-align:center;
   padding:8px;
 }
+
+.star{
+  float:right ;
+  width:49%;
+  padding-top:10px;
+  padding-bottom:10px;
+
+}
+.tech h4{
+  float:left;
+  width:49%;
+  text-align: left;
+/*  padding-left:25px ;
+  margin-left: 5%;*/
+}
+
 
 
 #section1 {
@@ -130,16 +163,17 @@ h2 {
   color: #000000;
   cursor: pointer;
   font-family: sans-serif;
-  font-size: 15px;
-
+  font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px; 
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+  margin-top: 10px;
   left: 25px;
   z-index:999;
   position: fixed;
+  background:#CCCCCC;
 
 }
 
@@ -170,7 +204,7 @@ h2 {
   -webkit-border-radius: 4px;
   font-weight: normal; 
   text-decoration: none;
-  z-index:999;
+  z-index:3;
 }
 
 .totop a:hover {
@@ -227,29 +261,30 @@ h2 {
 
 
 .tech {
-   background: #0000FF;
-   color: white;
+   background: #2A3642;
+   color: #B8C1CA;
    padding-top: 50px;
    margin-bottom: 220px;
    margin-top:-20px;
 }
 
 .expe {
-   background: #DF0101;
-   color: white;
+   background: #F1EEE5;
+   color: #404237;
    padding-top: 40px;
    margin-bottom: 220px;
 
 }
 
 .cont {
-   background: #FACC2E;
+   background: #9E9E9E;
    color: white;
    padding-top: 40px;
 }
 
 .profile {
-   background: #9A2EFE;
+/*   background: #B6BCBC;*/
+   background: #AFB5C9;
    color: white;
    padding-top: 40px;
    margin-bottom: 220px;
@@ -289,7 +324,7 @@ h2 {
 
 .expe-back{
    background-attachment: fixed;
-   background-image: url('http://www.ittime.com.cn/uploadfile/2013/1211/20131211072819972.jpg');
+   background-image: url('http://th08.deviantart.net/fs71/PRE/f/2012/206/0/a/earth_and_moon_by_johnreut-d58kvxx.png');
    -moz-background-size: cover;
    background-size: cover;
 /*   background-repeat: no-repeat;*/
@@ -309,7 +344,8 @@ h2 {
 }
 
 h3{
-
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 h4{
@@ -317,4 +353,17 @@ h4{
   font-size: 18px;
   font-family: "Comic Sans MS", cursive, sans-serif;
 
+}
+
+.block{
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.contact{
+  display: inline;
+  margin: auto 5%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
 }
