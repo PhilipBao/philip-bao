@@ -48,14 +48,13 @@ h2 {
 
 .jumbotron {
    background-attachment: fixed;
-   background-image: url("../statics/img/bg.jpg");
+   background-image: url('https://raw.githubusercontent.com/bwwyyy/philip-bao/gh-pages/statics/img/bg.jpg');
    -moz-background-size: cover;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
    height: 100%;
    margin-bottom: 0;
-   /*z-index: 999;*/
    padding: 0 !important;
 }
 
@@ -64,7 +63,6 @@ h2 {
    top: 28%;
    z-index: 4;
    text-align: center;
-   color: #FFFFFF;
 }
 
 
@@ -79,10 +77,13 @@ h2 {
 
 #section1 {
 
-  float:left;
   text-align:center;
   padding:10px;
-  font-size:20px;
+  font-size:30px;
+  margin-bottom: 20px;
+  margin-top: -10px; 
+  width:700px; 
+  margin:0px auto;
 }
 
 
@@ -221,5 +222,99 @@ h2 {
 {
     transition: all 250ms ease-in-out 0s;
     display: none;
+
+}
+
+
+.tech {
+   background: #0000FF;
+   color: white;
+   padding-top: 50px;
+   margin-bottom: 220px;
+   margin-top:-20px;
+}
+
+.expe {
+   background: #DF0101;
+   color: white;
+   padding-top: 40px;
+   margin-bottom: 220px;
+
+}
+
+.cont {
+   background: #FACC2E;
+   color: white;
+   padding-top: 40px;
+}
+
+.profile {
+   background: #9A2EFE;
+   color: white;
+   padding-top: 40px;
+   margin-bottom: 220px;
+}
+
+.hobb {
+   background: #2EFEF7;
+   color: white;
+   padding-top: 40px;
+
+}
+
+.tech-back{
+   background-attachment: fixed;
+   background-image: url('http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg');
+   -moz-background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100%;
+   margin-bottom: 0;
+   padding: 0 !important;
+}
+
+
+.prof-back{
+   background-attachment: fixed;
+   background-image: url('http://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/Computer-Science.jpg?itok=5FzfoaCV');
+   -moz-background-size: cover;
+   background-size: cover;
+/*   background-repeat: no-repeat;*/
+   background-position: center;
+   height: 100%;
+   margin-bottom: 0;
+   padding: 0 !important;
+}
+
+.expe-back{
+   background-attachment: fixed;
+   background-image: url('http://www.ittime.com.cn/uploadfile/2013/1211/20131211072819972.jpg');
+   -moz-background-size: cover;
+   background-size: cover;
+/*   background-repeat: no-repeat;*/
+   background-position: center;
+   height: 100%;
+   margin-bottom: 0;
+   padding: 0 !important;
+}
+
+.skill-left{
+  float:left;
+  width: 45%;
+}
+.skill-right{
+  float:left;
+  width: 45%;
+}
+
+h3{
+
+}
+
+h4{
+  /*float: left;*/
+  font-size: 18px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 
 }
