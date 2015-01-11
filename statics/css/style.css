@@ -147,7 +147,7 @@ sub{
 
 .jumbotron {
    background-attachment: fixed;
-   background-image: url('https://raw.githubusercontent.com/bwwyyy/philip-bao/gh-pages/statics/img/bg.jpg');
+   background-image: url('../img/bg.jpg');
    -moz-background-size: cover;
    background-size: cover;
    background-repeat: no-repeat;
@@ -322,7 +322,7 @@ sub{
 
 .tech-back{
    background-attachment: fixed;
-   background-image: url('http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg');
+   background-image: url('../img/multicolor.jpg');
    -moz-background-size: cover;
    background-size: cover;
    background-repeat: no-repeat;
@@ -335,7 +335,7 @@ sub{
 
 .prof-back{
    background-attachment: fixed;
-   background-image: url('http://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/Computer-Science.jpg?itok=5FzfoaCV');
+   background-image: url('../img/101head.jpg');
    -moz-background-size: cover;
    background-size: cover;
 /*   background-repeat: no-repeat;*/
@@ -348,7 +348,7 @@ sub{
 
 .expe-back{
    background-attachment: fixed;
-   background-image: url('http://th08.deviantart.net/fs71/PRE/f/2012/206/0/a/earth_and_moon_by_johnreut-d58kvxx.png');
+   background-image: url('../img/earth.png');
    -moz-background-size: cover;
    background-size: cover;
 /*   background-repeat: no-repeat;*/
