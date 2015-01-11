@@ -17,72 +17,33 @@
 
 <body>
 
-  <div class="menu">
-    
-      <!-- Menu icon -->
-      <div class="icon-close">
-        <i class="fa fa-times fa-2x"></i>
+  <ul id="top-nav">
+    <div id="top-nav-left" class="move">
+      <div class="active">
+        <a href="#top">Top</a>
       </div>
-
-     <!-- Menu -->
-     <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PROFILE</a></li>
-        <li><a href="#">TECHINICAL QULIFICATION</a></li>
-        <li><a href="#">HOBBY</a></li>
-        <li><a href="#">CONTACT</a></li>
-     </ul>
-  </div>
-
-  <div class="icon-menu">
-    <i class="fa fa-bars"></i>
-    Menu
-  </div>
-
-
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid" style="z-index: 99999;">
-    <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      <a class="navbar-brand" href="#">  </a>
+      <div>
+        <a href="#prof">Profile</a>
       </div>
+      <div style="margin-right:30px">
+        <a href="#tech">Skills</a>
+      </div>
+      <div >
+        <a href="#expe">Experiences</a>
+      </div>
+      <div>
+        <a href="#cont">Contact</a>
+      </div>
+    </div>
+    <div style="float: right; margin-right:30px;">
+      <a href="login.html">SignIn</a>
+    </div>
+  </ul>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          
-          <li><a href="file:///D:/web/philip-bao/index.html">My Blog</a></li>
-          <li><a href="https://drive.google.com/file/d/0BzkUR59ZAIPxZDMzM2pFc200VlE/view?usp=sharing" target="_blank">My Resume</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My program<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-             <li><a href="https://github.com/bwwyyy/Tower-of-the-Sorcerer-V2.0">Python</a></li>
-             <li class="divider"></li>
-             <li><a href="https://github.com/bwwyyy/Linked_list">C++</a></li>
-             <li class="divider"></li>
-             <li><a href="#">C</a></li>
-            </ul>
-         </li>
-       </ul>
-        <form class="navbar-form navbar-right" action="http://www.google.com/search">
-          <div class="form-group">
-            <input name="q"  class="form-control" placeholder="Search in google" >
-          </div>
-          <input type="submit">
-        </form>
-     </div>
-   </div>
-  </nav>
 
 
   <div  id = "top" class="jumbotron" style="height: 980px;">
-    <div class = "container" style = "text-align: center; margin-bottom: -40px;">
+    <div class = "container" style = "text-align: center; margin-bottom: -40px; margin-top:360px; color:#ffffff;">
       <h1>Philip (Weiyuan) Bao</h1>
       <sub>Personal Blog</sub>
     </div>
@@ -91,12 +52,15 @@
 
 
 
-  <div class="prof-back">
+  <div id = "prof" class="prof-back">
     <div class="profile">
       <div style="margin-bottom:10px;" > 
         <h2>Profile</h2>
+        <div class="subs">An energentic computer developer</div>
       </div>
-      <div style="width:800px;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+      <hr>
+<!--       <div style="width:800px;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div> -->
+
 
       <p style="text-align:center; float: left auto;margin-top:40px;"><b>Some information about me:</b></p>
 
@@ -136,7 +100,7 @@
       </div>
       <br>
       
-      <form>
+<!--       <form>
        <div class="form-group">
          <textarea class="form-control status-box" rows="2" placeholder="What's you want to comment?"></textarea>
        </div>
@@ -148,8 +112,15 @@
       <p>You Said:</p>
       <ul class="posts">
       </ul>
-      <div style="width:800px;height:60px;"></div>
-
+      <div style="width:800px;height:60px;"></div> -->
+      <h4 style="text-align:center;color:brown;">To Find More: </h4>
+      
+        <div class="resume ">
+          <a href="https://drive.google.com/file/d/0BzkUR59ZAIPxM3duSGpyTklVbWs/view?usp=sharing" target="_blank">
+            <i class="fa fa-paperclip fa-2x">My Resume</i>
+          </a>
+        </div>
+      
 
     </div>
   </div>
@@ -157,10 +128,15 @@
 
 
 
-  <div class="tech-back">
+  <div id="tech" class="tech-back">
     <div class="tech" style="list-style-type:none;padding:0;">
       <h2>Techinical Qualification</h2>
-      <h3></h3>
+
+
+
+      <div class="subs">Learn More, Be Better.</div>
+
+
       <hr>
 
       <h3>Skills</h3>
@@ -476,9 +452,10 @@
 
 
 
-  <div class="expe-back">
+  <div id = "expe"class="expe-back">
     <div class="expe" style="padding-bottom:50px">
       <h2>Experiences</h2>
+      <div class="subs">Learn From Practising.</div>
       <hr>
       <div class="block">
         <h3>Education</h3>
@@ -546,7 +523,7 @@
 
  -->
 
-  <div class="cont">
+  <div id="cont" class="cont">
     <h2>Contact</h2>
     <h3></h3>
     <hr>

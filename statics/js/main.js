@@ -1,100 +1,18 @@
 var main = function() {
-  $('.btn').click(function() {
-    var post = $('.status-box').val();
-    $('<li>').text(post).prependTo('.posts');
-    $('.status-box').val('');
-    $('.counter').text('140');
-    $('.btn').addClass('disabled'); 
-  });
-  
-  $('.status-box').keyup(function() {
-    var postLength = $(this).val().length;
-    var charactersLeft = 140 - postLength;
-    $('.counter').text(charactersLeft);
-  
-    if(charactersLeft < 0) {
-      $('.btn').addClass('disabled'); 
-    }
-    else if(charactersLeft == 140) {
-      $('.btn').addClass('disabled');
-    }
-    else {
-      $('.btn').removeClass('disabled');
-    }
-  });
-  
-  $('.btn').addClass('disabled');
 
-  $('.icon-menu').click(function() {
-    if($('.menu').hasClass('toggled')){
-      $('.menu').animate({
-        left: "-285px"
-      }, 200);
+  // $('.tech h2').mouseover(function(){
+  //   $('.tech h2').text('Learn More, Be Better!');
+  // });
+  // $('.tech h2').mouseout(function(){
+  //   $('.tech h2').text('Techinical Qualification');
+  // });
 
-      $('body').animate({
-        left: "0px"
-      }, 200);
-      $('.icon-menu').animate({
-        left:"25px"
-      }, 200);
-      $('.menu').removeClass('toggled')
-    }else{
-      $('.menu').animate({
-        left: "0px"
-      }, 200);
-
-      $('.icon-menu').animate({
-        left:"300px"
-      }, 200);
-
-      $('body').animate({
-        left: "285px"
-      }, 200);
-      $('.menu').addClass('toggled')
-    }
-  });
-
-  /* Then push them back */
-  $('.icon-close').click(function() {
-    $('.menu').animate({
-      left: "-285px"
-    }, 200);
-
-    $('body').animate({
-      left: "0px"
-    }, 200);
-    $('.menu').removeClass('toggled')
-  });
-  /*toggle down*/
-  $(function() {
-
-    var $sidebar   = $(".menu"),
-        $menu1     = $(".icon-menu"),
-        $window    = $(window),
-        offset     = $sidebar.offset(),
-        topPadding = 0;
-
-    $window.scroll(function() {
-        if ($window.scrollTop() > offset.top) {
-            $sidebar.stop().animate({
-              marginTop: 0
-                /*marginTop: $window.scrollTop() - offset.top + topPadding-20*/
-            });
-            $menu1.stop().animate({
-              marginTop: 0
-                /*marginTop: $window.scrollTop() - offset.top + topPadding-20*/
-            });
-        } else {
-            $sidebar.stop().animate({
-                marginTop: 0
-            });
-            $menu1.stop().animate({
-                marginTop: 0
-            });
-        }
-    });
-    
-  });
+  // $('.hobb h2').mouseover(function(){
+  //   $('.hobb h2').text('Charging is important!');
+  // });
+  // $('.hobb h2').mouseout(function(){
+  //   $('.hobb h2').text('Interest');
+  // });
 
 
   $('.totop a').click(function() {
@@ -102,21 +20,37 @@ var main = function() {
       return false;
   });
 
-  $('.tech h2').mouseover(function(){
-    $('.tech h2').text('Learn More, Be Better!');
-  });
-  $('.tech h2').mouseout(function(){
-    $('.tech h2').text('Techinical Qualification');
-  });
-
-  $('.hobb h2').mouseover(function(){
-    $('.hobb h2').text('Charging is important!');
-  });
-  $('.hobb h2').mouseout(function(){
-    $('.hobb h2').text('Interest');
-  });
-
-
+   $('.move a').click(function(ev) {
+      ev.preventDefault();
+      $('html, body').animate({
+         scrollTop: $(this.hash).offset().top
+      }, 600);
+   });
 }
 
+
+
+
 $(document).ready(main);
+
+
+$(window).scroll(function() {
+   var navHeight = $('#top-nav').height();
+   var pos = $(window).scrollTop() + navHeight;
+   $('#top-nav-left').find('.active').removeClass('active');
+
+   if($(window).scrollTop() + $(window).height() >= $(document).height()) {
+      $('#top-nav-left > div:nth-child(5) > a').parent().addClass('active');
+   } else if(pos >= $('#expe').position().top) {
+      $('#top-nav-left > div:nth-child(4) > a').parent().addClass('active');
+   } else if(pos >= $('#tech').position().top) {
+      $('#top-nav-left > div:nth-child(3) > a').parent().addClass('active');
+   } else if(pos >= $('#prof').position().top) {
+      $('#top-nav-left > div:nth-child(2) > a').parent().addClass('active');
+   } else if(pos >= $('#top').position().top) {
+      $('#top-nav-left > div:nth-child(1) > a').parent().addClass('active');
+   }
+})
+
+
+

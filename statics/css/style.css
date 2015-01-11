@@ -1,3 +1,78 @@
+* {
+    margin: 0 auto;
+}
+
+
+
+#top-nav, div {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Helvetica, Arial;
+    line-height: 1.5;
+}
+
+#top-nav-left > div, #top-nav > div {
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+}
+
+ul {
+    padding: 0 0;
+}
+
+#top-nav {
+    opacity: 0.8;
+    position: fixed;
+    z-index: 10;
+    background: #FFFFCC;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: -10px;
+}
+
+#top-nav div {
+    float: left;
+    margin:0 10px 0 10px ;
+}
+
+#top-nav a {
+    display: block;
+    padding: 5px 20px 7px 20px;
+    width: 8em;
+    text-align: center;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+    color: #C2C2D6;
+}
+
+#top-nav a:hover {
+    color: #006666;
+    background:#DEDFDE;
+}
+
+#top-nav div.active a {
+    border-bottom: 3px solid #0099FF;
+    /*border-top: 1px solid #0099FF;*/
+    color: #0099FF;
+    background:#DEDFDE;
+}
+
+
+
+
+
+.form-group{
+  width:300px;
+}
+
+
 hr {
   margin: 40px 0;
   border-color: #727878;
@@ -15,11 +90,12 @@ hr {
    background-color: black;
    height: inherit;
    position: absolute;
-   top: 72px;
+   top: 0;
    bottom: 0;
    left: 0;
    right: 0;
    opacity: 0.3;
+
 }
 
 
@@ -39,7 +115,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.jumbotron .container h1 {
+h1 {
   font-size: 60px;
   color: #ffffff;
   padding-bottom: 20px;
@@ -56,9 +132,17 @@ h2 {
 
 }
 
-.jumbotron sub{
-  font-size: 25px;
+sub{
+    font-size: 25px;
+    text-align: center;
+    float:center;
+}
+
+.subs{
+  font-size: 20px;
   text-align: center;
+  font-style:oblique; 
+  float:center;
 }
 
 .jumbotron {
@@ -102,6 +186,7 @@ h2 {
   float:left;
   width:49%;
   text-align: left;
+  color:#00CCFF;
 /*  padding-left:25px ;
   margin-left: 5%;*/
 }
@@ -119,73 +204,6 @@ h2 {
   margin:0px auto;
 }
 
-
-.menu {
-  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
-  left: -285px;  /* start off behind the scenes */
-  height: 100%;
-  position: fixed;
-  width: 285px;
-}
-
-.menu ul {
-  border-top: 1px solid #636366;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  border-bottom: 1px solid #636366;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
-  
-}
-
-.menu a {
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.icon-close {
-  cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
-  color:#E6E6E6;
-}
-
-.icon-menu {
-  color: #000000;
-  cursor: pointer;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px; 
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  margin-top: 10px;
-  left: 25px;
-  z-index:999;
-  position: fixed;
-  background:#CCCCCC;
-
-}
-
-.icon-menu:hover{
-  background: #333;
-  color: #fff;
-}
-
-.icon-menu i {
-  margin-right: 5px;
-}
-
 .ti{
   font-family:sans-serif;
 
@@ -198,7 +216,7 @@ h2 {
   bottom: 0px; 
   right: 50px; 
   color: #333; 
-  z-index: 1000;
+
   border-radius: 4px; 
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -210,6 +228,9 @@ h2 {
 .totop a:hover {
   background: #333;
   color: #fff;
+}
+.expe h4{
+  color:#CCA300;
 }
 
 
@@ -286,8 +307,9 @@ h2 {
 /*   background: #B6BCBC;*/
    background: #AFB5C9;
    color: white;
-   padding-top: 40px;
+   padding-top: 0px;
    margin-bottom: 220px;
+
 }
 
 .hobb {
@@ -317,9 +339,10 @@ h2 {
    background-size: cover;
 /*   background-repeat: no-repeat;*/
    background-position: center;
-   height: 100%;
+   height: 120%;
    margin-bottom: 0;
    padding: 0 !important;
+
 }
 
 .expe-back{
@@ -342,6 +365,12 @@ h2 {
   float:left;
   width: 45%;
 }
+
+
+
+
+
+
 
 h3{
   text-align: center;
@@ -367,3 +396,24 @@ h4{
   text-decoration: none;
   color: #333;
 }
+
+.resume{
+  text-align: center;
+  color: #3E3E3E; 
+  background: #CECECE;
+  border-radius: 9px; 
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  font-weight: normal; 
+  text-decoration: none;
+  width:190px;
+  /*height:;*/
+  margin-bottom: 40px;
+}
+
+
+.resume:hover{
+  background: #808080;
+  color: #FF9900;
+}
+
