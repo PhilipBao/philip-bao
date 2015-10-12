@@ -1,20 +1,5 @@
 var main = function() {
-
-  // $('.tech h2').mouseover(function(){
-  //   $('.tech h2').text('Learn More, Be Better!');
-  // });
-  // $('.tech h2').mouseout(function(){
-  //   $('.tech h2').text('Techinical Qualification');
-  // });
-
-  // $('.hobb h2').mouseover(function(){
-  //   $('.hobb h2').text('Charging is important!');
-  // });
-  // $('.hobb h2').mouseout(function(){
-  //   $('.hobb h2').text('Interest');
-  // });
-
-
+//Top button
   $('.totop a').click(function() {
       $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
@@ -33,7 +18,7 @@ var main = function() {
 
 $(document).ready(main);
 
-
+//Menu driven scroll
 $(window).scroll(function() {
    var navHeight = $('#top-nav').height();
    var pos = $(window).scrollTop() + navHeight;
