@@ -8,6 +8,8 @@
     display: table;
     width: 100%;
     margin: 0 auto;
+    height: 40px;
+    font-size: large;
     font-family: Helvetica, Arial;
     line-height: 1.5;
 }
