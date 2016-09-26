@@ -201,11 +201,10 @@ var gen_col_li_tech = function (li_container, data) {
     p.append("div")
      .attr("class","col-md-7")
      .append("h4")
-     .style("float", "left")
      .text(data[i]["name"] + ":");
     var s = p.append("div").attr("class", "col-md-3")
                            .style("float", "right")
-                           .style("padding-top", "3%");
+                           .style("padding-top", "2%");
     var j;
     for (j = 0; j < 5; j++) {
       if (j < data[i]["level"])

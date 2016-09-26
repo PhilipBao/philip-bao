@@ -9,7 +9,7 @@
     width: 100%;
     margin: 0 auto;
     height: 40px;
-    font-size: large;
+    /*font-size: large;*/
     font-family: Helvetica, Arial;
     line-height: 1.5;
 }
@@ -18,10 +18,6 @@
     width: auto;
 }
 
-a {
-    text-decoration: none;
-    color: #808080;
-}
 
 ul {
     padding: 0 0;
@@ -52,6 +48,7 @@ ul {
     -moz-transition: .5s all ease-out;
     transition: .5s all ease-out;
     color: #C2C2D6;
+    font-size: larger;
 }
 
 #top-nav a:hover {
@@ -61,14 +58,14 @@ ul {
 
 #top-nav div.active a {
     border-bottom: 3px solid #0099FF;
-    /*border-top: 1px solid #0099FF;*/
     color: #0099FF;
     background:#DEDFDE;
+    text-decoration: none;
 }
 
-
-
-
+.move a{
+    text-decoration: none;
+}
 
 .form-group{
   width:300px;
@@ -118,7 +115,7 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 63px;
   color: #ffffff;
   padding-bottom: 20px;
   border-bottom: 1px solid #ffffff;
@@ -127,7 +124,7 @@ h1 {
 
 
 h2 {
-   font-size: 52px;
+   font-size: 55px;
    text-align: center;
    padding-top:20px;
    padding-bottom:20px;
@@ -135,16 +132,39 @@ h2 {
 }
 
 sub{
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
     float:center;
 }
 
 .subs{
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   font-style:oblique; 
   float:center;
+}
+
+h3{
+  text-align: center;
+  padding-bottom: 43px;
+}
+
+h4{
+  font-size: 21px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#prof h4{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h5, .h5 {
+    font-size: 16px;
+}
+
+h6{
+    font-size: 14px;
 }
 
 .jumbotron {
@@ -166,10 +186,6 @@ sub{
    text-align: center;
 }
 
-/*.container{
-  list-style-type: none;
-}*/
-
 #header {
 
   color: black;
@@ -186,14 +202,9 @@ sub{
 }
 .tech h4{
   float:left;
-  width:49%;
   text-align: left;
   color:#00CCFF;
-/*  padding-left:25px ;
-  margin-left: 5%;*/
 }
-
-
 
 #section1 {
 
@@ -213,24 +224,7 @@ sub{
   
 
 }
-.totop a {
-  position: fixed;
-  bottom: 0px; 
-  right: 50px; 
-  color: #333; 
 
-  border-radius: 4px; 
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  font-weight: normal; 
-  text-decoration: none;
-  z-index:3;
-}
-
-.totop a:hover {
-  background: #333;
-  color: #fff;
-}
 .expe h4{
   color:#CCA300;
 }
@@ -367,24 +361,6 @@ sub{
 .skill-right{
   float:left;
   width: 45%;
-}
-
-
-
-
-
-
-
-h3{
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-h4{
-  /*float: left;*/
-  font-size: 18px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-
 }
 
 .block{
