@@ -368,6 +368,10 @@ h6{
   text-align: center;
 }
 
+.block2col{
+  padding-bottom: 70px;
+}
+
 .contact{
   display: inline;
   margin: auto 5%;
