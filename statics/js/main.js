@@ -56,14 +56,34 @@ var PROJECTS = [
     description2: "",
     description3: "Developed an academic platform with friends which used by 1000+ University of Toronto students to share reviews of courses, professors and exams, and watch video tutorials of some courses.", 
     url:          "",
+    location:     "",
+    
+  },
+  { title:        "Snake Game AI", 
+    time:         "January 2017", 
+    description1: "Java",
+    description2: "",
+    description3: "Developed a Snake Game AI using Swing. The AI is able to direct the snake to eat food through shortest possible path, while keeping itself from collision.", 
+    url:          "https://github.com/bwwyyy/Snake-AI-Player",
+    location:     "",
+    
+  },
+  { title:        "Simple C Interpreter", 
+    time:         "December 2016", 
+    description1: "C",
+    description2: "",
+    description3: "Inspired by the C4 compiler. Developed a C interpreter in C which parse the C program, translate the parsed token to x86 assembly and execute it.", 
+    url:          "https://github.com/bwwyyy/CInterpreter",
+    location:     "",
     
   },
   { title:        "2D Robot User Interface Design", 
-    time:         "December 2014", 
+    time:         "December 2015", 
     description1: "C++, PlayerStage Platform",
     description2: "",
     description3: "Designed a 2D robot user interface with C++ to let the user easily control the robot to move along the path, avoid obstacles, etc.", 
-    url:          "",
+    url:          "https://github.com/bwwyyy/Virtual-Robot/",
+    location:     "",
     
   },
   { title:        "Image De-compressor", 
@@ -72,6 +92,7 @@ var PROJECTS = [
     description2: "",
     description3: "Designed a 4-stage robust ‘.mic8’ image de-compressor in System Verilog verified by software model.", 
     url:          "https://github.com/bwwyyy/Digital-Systems-Design--2015/",
+    location:     "",
     
   },
   { title:        "Sound Analyzer", 
@@ -80,6 +101,7 @@ var PROJECTS = [
     description2: "",
     description3: "Designed a multi-stage Sound Analyzer which get the real-time sound input from a microphone, amplify the signal with a hard-wired amplifier circuit, perform ADC with a microcontroller, and transfer the digital data to PC using serial communication.", 
     url:          "https://github.com/bwwyyy/ADC_for_MicroController",
+    location:     "",
   },
 ];
 
@@ -87,16 +109,18 @@ var WORK_EXPERIENCE = [
   { title:        "Intel", 
     time:         "May, 2016 ~ Now", 
     description1: "PEY Engineer, Intern",
-    description2: "San Jose, CA, USA", 
+    description2: "", 
     description3: "Emulated a 100G Ethernet IP design of Intel’s new 14nm FPGA, Stratix 10. Designed a comprehensive multi-mode 100G multilane Ethernet design test platform which be able to generate and analyze millions of packets efficiently in System Verilog. Wrote Tcl and Bash script to automate Synopsys/synthesis flow and used by a team of 10 people.", 
     url:          "",
+    location:     "San Jose, CA, USA",
   },
   { title:        "BlackBerry Inc.", 
     time:         "May-August, 2015", 
     description1: "Software Developer Co-op",
-    description2: "Ottawa, ON, Canada",
+    description2: "",
     description3: "Developed and debugged an Android mobile search application with a team of 10 people which performs fast searches of 12 categories from databases containing over 100k items. Improved the search performance and helped the team to reduce the total search time to 3 seconds.", 
     url:          "",
+    location:     "Ottawa, ON, Canada",
   },
 ];
 
@@ -134,6 +158,7 @@ var initScrollReveal = function() {
     };
     window.sr = ScrollReveal(config);
     sr.reveal('.block');
+    sr.reveal('.block2col');
 };
 
 
@@ -201,11 +226,10 @@ var gen_col_li_tech = function (li_container, data) {
     p.append("div")
      .attr("class","col-md-7")
      .append("h4")
-     .style("float", "left")
      .text(data[i]["name"] + ":");
     var s = p.append("div").attr("class", "col-md-3")
                            .style("float", "right")
-                           .style("padding-top", "3%");
+                           .style("padding-top", "2%");
     var j;
     for (j = 0; j < 5; j++) {
       if (j < data[i]["level"])
@@ -221,9 +245,9 @@ var populate_expr_sec = function () {
   for (var i in EDUCATION)
     fill_expr_1_col(".edu-container", EDUCATION[i]);
   for (var i in PROJECTS)
-    fill_expr_1_col(".proj-container", PROJECTS[i]);
+    fill_expr_2_col(".proj-container", PROJECTS[i]);
   for (var i in WORK_EXPERIENCE)
-    fill_expr_1_col(".work-container", WORK_EXPERIENCE[i]);
+    fill_expr_2_col(".work-container", WORK_EXPERIENCE[i]);
 };
 
 var fill_expr_1_col = function (container_name, data) {
@@ -238,7 +262,7 @@ var fill_expr_1_col = function (container_name, data) {
                             .style("max-width", getTextWidth() + "px")
                             .attr("class", "width-change");
   if (data.url !== "") {
-    container_expr.append("div").style("max-width", "4px")
+    container_expr.append("div")
                   .append("a")
                   .attr("href", data.url)
                   .attr("target", "_blank")
@@ -246,5 +270,36 @@ var fill_expr_1_col = function (container_name, data) {
                   .append("i")
                   .attr("class", "fa fa-github-square fa-3x");
   }
+};
+
+var fill_expr_2_col = function (container_name, data) {
+  var container_expr = d3.select(container_name).append("div").attr("class", "block2col");
+  var left_col = container_expr.append("div").attr("class", "col-md-4");
+  var right_col = container_expr.append("div").attr("class", "col-md-8");
+
+  left_col.append("h4").append("strong").text(data.title);
+  left_col.append("p").text(data.time);
+
+  if (data.url !== "") {
+    var git_hub = left_col.append("span").attr("class", "github");
+
+    git_hub.append("i").attr("class", "fa fa-lg fa-github");
+    git_hub.append("a").attr("href", data.url)
+                  .attr("target", "_blank").html("Source Code");
+                  
+  } else if (data.location !== "") {
+    var location = left_col.append("span").attr("class", "location");
+
+    location.append("i").attr("class", "fa fa-lg fa-map-marker");
+    location.append("span").html(data.location);
+  }
+
+  right_col.append("h4").text(data.description1)
+                             .style("max-width", getTextWidth() + "px")
+                             .attr("class", "width-change");
+  right_col.append("h6").text(data.description2);
+  right_col.append("h5").text(data.description3)
+                            .style("max-width", getTextWidth() + "px")
+                            .attr("class", "width-change");
 };
 
